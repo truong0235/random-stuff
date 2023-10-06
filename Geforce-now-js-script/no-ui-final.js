@@ -1,4 +1,4 @@
-function () {
+(function () {
   var audioElements = [];
   var audioPlaying = false;
 
@@ -20,6 +20,5 @@ function () {
       }
     }
   }
-  setInterval(checkForCode, 10000);
-  checkForCode();
-}
+  var repeat = setInterval(checkForCode, 10000);
+})();
