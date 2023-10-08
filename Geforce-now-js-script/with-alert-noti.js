@@ -27,13 +27,13 @@
     clearInterval(repeat);
   }
   
-  function checkHeader() {    
+  function checkHeader() {
     headerElement = document.querySelector('.font-header4');    
     if (headerElement) {
       if (!isPlaying) {
         audio2 = createAudio('https://drive.google.com/u/0/uc?id=1wI1nWz99npKZzkVmp-ZSdH4nS8j_3G7t&export=download');
         isPlaying = true;
-        notifyconfirm();
+        setTimeout(notifyconfirm, 15000);
       }
     }
   }
