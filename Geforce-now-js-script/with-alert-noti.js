@@ -1,4 +1,5 @@
-(function() {
+javascript:(function() {
+  console.log("running");
   var audioElements = [];
   var isPlaying = false;
   var audio2, audio1, confirmation, headerElement;
@@ -18,7 +19,7 @@
       audioElements.splice(index, 1);
     }
   }
-  audio1 = createAudio('https://drive.google.com/u/0/uc?id=1RfOA-LF8TUz0d-LbQSWiO-niH8PyOe1Z&export=download');
+  audio1 = createAudio('https://github.com/truong0235/random-stuff/raw/main/audio-file/mp3-now.com%20-%2060%20seconds%20of%20silence_64kbps.mp3');
 
   function notifyconfirm() {
     alert("finished the queue, click ok to stop the arlet sound");
@@ -31,7 +32,7 @@
     headerElement = document.querySelector('.font-header4');    
     if (headerElement) {
       if (!isPlaying) {
-        audio2 = createAudio('https://drive.google.com/u/0/uc?id=1wI1nWz99npKZzkVmp-ZSdH4nS8j_3G7t&export=download');
+        audio2 = createAudio('https://github.com/truong0235/random-stuff/raw/main/audio-file/pickupCoin.wav');
         isPlaying = true;
         setTimeout(notifyconfirm, 15000);
       }
